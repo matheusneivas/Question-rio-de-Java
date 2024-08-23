@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class vendedor {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Qual o nome do Vendedor: ");
+        String nome = scanner.nextLine();
+        
+        System.out.print("Salario fixo: ");
+        double fixo = scanner.nextDouble();
+        
+        System.out.print("Total de vendas: ");
+        double vendas = scanner.nextDouble();
+        
+        double comissao = vendas *0.15;
+        
+        double salario = fixo + comissao;
+        
+        
+        System.out.print("\nNome do vendedor: " + nome);
+        System.out.print("\nSalario Fixo: " + fixo);
+        System.out.print("\nSalario final: " + salario);
+        
+        scanner.close();
+    }
+}
