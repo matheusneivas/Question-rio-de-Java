@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class numeros {
+    public static void main(String [] agr){
+        Scanner scanner = new Scanner (System.in);
+        System.out.print("Digite o primero numero: ");
+        double numero1 = scanner.nextDouble();
+        
+        System.out.print("Digite o segundo numero: ");
+        double numero2 = scanner.nextDouble();
+        
+        double soma = numero1 + numero2;
+        
+        System.out.println("A soma dos dois numeros e: " + soma);
+        
+        scanner.close();
+        
+    }
+}
