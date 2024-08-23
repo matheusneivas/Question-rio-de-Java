@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class viagem {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Quantos KM o veiculo andou: ");
+        double km = scanner.nextDouble();
+        
+        System.out.print("Quantidade de litros de combustivel gasto: ");
+        double comb = scanner.nextDouble();
+        
+        double div = km / comb;
+        
+        System.out.print("Resultado: " + div);
+        
+        scanner.close();
+    }
+}
