@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class conversaoreal {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite o valor da cotacao do dolar: ");
+        double cotacao = scanner.nextDouble();
+        
+        System.out.println("Digite a quantidade de dolares disponiveis: ");
+        double disponiveis = scanner.nextDouble();
+        
+        double conversao = disponiveis * cotacao;
+        
+        System.out.print("O valor em real e: " + conversao);
+        
+        scanner.close();
+        
+    }
+}
