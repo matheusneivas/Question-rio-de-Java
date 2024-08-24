@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class trocavalores {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite o valor A: ");
+        double A = scanner.nextDouble();
+        
+        System.out.println("Digite o valor B: ");
+        double B = scanner.nextDouble();
+        
+        System.out.print("Valor originais: ");
+        System.out.print("Valor de A: " + A);
+        System.out.print("Valor de B: " + B);
+        
+         double aux = A;
+        A = B;   
+        B = aux;  
+        
+        System.out.println("\nValores trocados:");
+        System.out.println("A = " + A);
+        System.out.println("B = " + B);
+    }
+}
