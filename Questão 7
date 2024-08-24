@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class graus {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); 
+        System.out.println("Temperatura em graus Celsius: ");
+        double celsius = scanner.nextDouble();
+        
+        double fahrenheit = (9 * celsius + 160) / 5;
+        
+        System.out.print("A temepratura em Fahrenheit e: " + fahrenheit);
+        
+        scanner.close();
+    }
+}
