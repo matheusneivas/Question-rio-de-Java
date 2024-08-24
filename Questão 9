@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class mamaocomacucar {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite o valor total da compra: ");
+        double valor = scanner.nextDouble();
+        
+        double div = valor / 5;
+        
+        System.out.print("5x sem juros de " + div);
+        
+        scanner.close();
+    }
+}
